@@ -16,4 +16,4 @@ if __name__ == '__main__':
         training()
     if glob.glob(os.path.join(DIRECTORY, 'users', '*.json')) == []:
         newUser(username='default')
-    app.run(debug=DEBUG)
+    app.run(host='0.0.0.0', port=5000, debug=DEBUG)
